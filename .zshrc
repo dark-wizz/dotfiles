@@ -126,5 +126,4 @@ eval $(thefuck --alias)
 alias py="/usr/lib/python3.12/venv/bin/python"
 alias pipv="/usr/lib/python3.12/venv/bin/pip"
 
-alias todo='sudo rodo'
 alias todo='sudo todo'
