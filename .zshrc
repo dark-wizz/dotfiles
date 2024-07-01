@@ -76,7 +76,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-vi-mode )
+plugins=(git zsh-autosuggestions vi-mode )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,9 +121,18 @@ alias ls="eza --icons=always"
 
 ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 
+#vi mode
+
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+VI_MODE_SET_CURSOR=true
+
 # fuck
 eval $(thefuck --alias)
 alias py="/usr/lib/python3.12/venv/bin/python"
 alias pipv="/usr/lib/python3.12/venv/bin/pip"
 
 alias todo='sudo todo'
+
+source <(fzf --zsh)
+# source /usr/share/fzf/key-bindings.zsh
+# source /usr/share/fzf/completion.zsh
