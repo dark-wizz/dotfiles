@@ -10,6 +10,21 @@ return {
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
 
+    --arduino
+    lspconfig.arduino_language_server.setup({
+      cmd = {
+        "arduino-language-server",
+        "-cli-config",
+        "/home/akram/.arduino15/arduino-cli.yaml",
+        "-fqbn",
+        "arduino:avr:uno", -- replace with the board you are using
+        "-cli",
+        "arduino-cli",
+        "-clangd",
+        "clangd",
+      },
+      filetypes = { "ino", "cpp" },
+    })
     -- import mason_lspconfig plugin
     local mason_lspconfig = require("mason-lspconfig")
 
@@ -132,5 +147,6 @@ return {
         })
       end,
     })
+    -- arduino
   end,
 }

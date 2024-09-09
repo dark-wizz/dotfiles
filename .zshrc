@@ -8,7 +8,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
+export LANG="C"
+export EDITOR="nvim"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -141,3 +142,30 @@ source <(fzf --zsh)
 # source /usr/share/fzf/key-bindings.zsh
 # source /usr/share/fzf/completion.zsh
 
+# arduino
+arduino-build() {
+  if [ "$#" -ne 1 ]; then
+    echo "Usage: arduino-build <sketch>"
+    return 1
+  fi
+
+  local sketch="$1"
+
+  # Get the port from the board list
+  local port
+  port=$(arduino-cli board list | awk '/^\/dev\/tty/ {print $1}')
+
+  if [ -z "$port" ]; then
+    echo "No Arduino board found. Please check your connections."
+    return 1
+  fi
+
+  echo "Using port: $port"
+
+  arduino-cli compile --fqbn arduino:avr:uno "$sketch" &&
+  arduino-cli upload --fqbn arduino:avr:uno -p "$port" "$sketch" &&
+  arduino-cli monitor -p "$port"
+}
+
+alias ard-comp='arduino-cli compile --fqbn arduino:avr:uno'
+alias ard-new='arduino-cli sketch new'

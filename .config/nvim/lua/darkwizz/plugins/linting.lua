@@ -3,6 +3,8 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   config = function()
     local lint = require("lint")
+    local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+    -- local eslint = lint.linters.eslint_d
 
     lint.linters_by_ft = {
       javascript = { "eslint_d" },
@@ -12,8 +14,7 @@ return {
       svelte = { "eslint_d" },
       python = { "pylint" },
     }
-    local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
-    -- fix
+
     -- eslint.args = {
     --   "--no-warn-ignored", -- <-- this is the key argument
     --   "--format",
