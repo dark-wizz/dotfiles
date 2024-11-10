@@ -12,7 +12,7 @@ export LANG="C"
 export EDITOR="nvim"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export YAZI_CONFIG_HOME="$HOME/.config/yazi"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -79,7 +79,11 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions vi-mode )
+plugins=(git zsh-autosuggestions zsh-vi-mode)
+
+# Only changing the escape key to `jk` in insert mode, we still
+# keep using the default keybindings `^[` in other modes
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,14 +124,6 @@ alias vi="nvim"
 
 alias ls="eza --icons=always"
 
-# zsh vim mode
-
-ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
-
-#vi mode
-
-VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
-VI_MODE_SET_CURSOR=true
 
 # fuck
 eval $(thefuck --alias)
@@ -169,3 +165,4 @@ arduino-build() {
 
 alias ard-comp='arduino-cli compile --fqbn arduino:avr:uno'
 alias ard-new='arduino-cli sketch new'
+export NODE_ENV=production
