@@ -1,13 +1,13 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 12;
+  font-size: 14;
 }
 window#waybar {
   background-color: transparent;
 }
 window#waybar > box > * {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   padding: 0 15px;
 }
@@ -31,4 +31,7 @@ window#waybar > box > * {
 #workspaces button.urgent {
   border-color: red;
   background-color: red;
+}
+#taskbar button {
+  margin-right: 3px;
 }

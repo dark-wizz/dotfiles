@@ -15,7 +15,7 @@
     "format": "󱚻 {bandwidthTotalBytes}",
   },
   "wlr/taskbar": {
-    "icon-size": 14,
+    "icon-size": 20,
     "on-click": "activate",
     "on-click-middle": "close",
     "active-first": true,
@@ -85,7 +85,7 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='red'><sup> </sup></span>",
+      "notification": " <span foreground='red'><sup> </sup></span>",
       "none": " ",
       "dnd-notification": " <span foreground='red'><sup> </sup></span>",
       "dnd-none": " ",
