@@ -1,0 +1,54 @@
+@define-color panel-bgc rgba(0, 0, 0, 0.8);
+@define-color widget-bgc rgba(20, 20, 20, 0.8);
+
+* {
+  font-size: 14px;
+}
+.control-center {
+  background-color: @panel-bgc;
+  padding: 10px;
+}
+.widget-volume,
+.widget-backlight,
+.widget-buttons-grid {
+  background-color: @widget-bgc;
+  margin: 5px;
+  border: 1px solid grey;
+}
+
+.widget-buttons-grid button {
+  min-width: 60px;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
+
+.widget-buttons-grid button > * {
+  color: grey;
+  font-size: 20px;
+}
+
+.widget-buttons-grid button:checked {
+  color: #fff;
+  background-color: #1c71d8;
+  border-color: #1c71d8;
+}
+
+.widget-buttons-grid button:checked > * {
+  color: #fff;
+}
+
+.control-center-dnd > * {
+  min-height: 6px;
+  min-width: 6px;
+}
+
+.control-center-clear-all {
+  background-color: unset;
+  padding: unset;
+  border: unset;
+}
+
+.control-center-clear-all > * {
+  min-height: 16px;
+  min-width: 16px;
+}
