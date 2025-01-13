@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR EDITOR:nvim
 SETUVAR HYPRSHOT_DIR:/home/akram/Pictures/screenshots
 SETUVAR __fish_initialized:3400
 SETUVAR cd:zoxide
