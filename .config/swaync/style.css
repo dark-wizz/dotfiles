@@ -1,5 +1,7 @@
 @define-color panel-bgc rgba(0, 0, 0, 0.8);
 @define-color widget-bgc rgba(20, 20, 20, 0.8);
+@define-color widget-border rgba(30, 30, 30, 1);
+@define-color button-border rgba(60, 60, 60, 1);
 
 * {
   font-size: 14px;
@@ -13,13 +15,31 @@
 .widget-buttons-grid {
   background-color: @widget-bgc;
   margin: 5px;
-  border: 1px solid grey;
+  border: 1px solid @widget-border;
 }
 
 .widget-buttons-grid button {
   min-width: 60px;
   border-radius: 20px;
-  border: 1px solid grey;
+  border: 1px solid @button-border;
+}
+.widget-menubar revealer > * {
+  border: 1px solid @widget-border;
+  border-radius: 15px;
+  margin: 2px 15px;
+  margin-left: 200px;
+  background: @widget-bgc;
+}
+.widget-menubar revealer button:hover {
+  color: red;
+}
+.widget-menubar revealer button {
+  background: unset;
+  border: unset;
+  border-radius: unset;
+}
+.widget-menubar revealer button:last-child {
+  border-top: 1px solid @button-border;
 }
 
 .widget-buttons-grid button > * {
@@ -48,7 +68,12 @@
   border: unset;
 }
 
+.control-center-clear-all:hover {
+  background-color: gray;
+}
 .control-center-clear-all > * {
-  min-height: 16px;
-  min-width: 16px;
+  font-size: 20px;
+}
+.control-center-clear-all {
+  padding: 0 20px;
 }
