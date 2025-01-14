@@ -8,5 +8,6 @@ set -x EDITOR nvim
 alias cd z
 alias S "sudo pacman -S"
 alias R "sudo pacman -S"
+alias ls eza
 
 zoxide init fish | source
