@@ -39,6 +39,6 @@
 
 ## themes
 
-gtk = Whitesur-dark
-icons = Whitesur-dark
-font = JetBrain nerd font regular
+- gtk = Whitesur-dark
+- icons = Whitesur-dark
+- font = JetBrain nerd font regular
