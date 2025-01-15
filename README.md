@@ -14,9 +14,9 @@
 - calender = galendae, gnome-calender
 - keyboard = kanata
 - power menu = wlogout
-- clipboard = clipist
-- osd = syshud
-- authentication client = gnome-polkit
+- clipboard = cliphist
+- osd = syshudof theat right
+- authentication client = polkit-gnome, xorg-xhost
 - messenger = telegram-desktop
 - screenshot = hyprshot, hyprshot-gui
 - file manager = nemo, yazi
@@ -25,7 +25,7 @@
 - calculator = gnome-calculator
 - music = spotify, amberol
 - task manager = gnome-system-monitor, htop
-- disk manager = gnome-disks, baobab
+- disk manager = gnome-disk-utility, baobab
 - audio = pipewire
 - wifi = nmcli
 - video = mpv player
@@ -34,8 +34,12 @@
 - audio = audacity
 - document = evince
 - clock = gnome-clock
+- lock = hyprlock
 - camera = cheese
 - remote = rustdesk
+- settings = nwg-looks, nwg-monitors
+- fuzzy find = fzf
+- snapshots = timeshift
 
 ## themes
 
