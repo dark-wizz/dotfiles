@@ -4,6 +4,7 @@ end
 # akram
 set -x HYPRSHOT_DIR /home/akram/Pictures/screenshots
 set -x EDITOR nvim
+set -x GTK_THEME Adwaita:dark
 
 alias cd z
 alias S "sudo pacman -S"

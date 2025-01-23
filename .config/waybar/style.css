@@ -11,6 +11,12 @@ window#waybar > box > * {
   border-radius: 15px;
   padding: 0 15px;
 }
+#window {
+  border-bottom: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  padding: 0 3px;
+}
 #workspaces {
   font-size: 2em;
   margin: 5px;
@@ -26,12 +32,16 @@ window#waybar > box > * {
   background-color: white;
   border-radius: 10px;
   color: black;
-  min-width: 2em;
+  padding: 0 6px;
 }
 #workspaces button.urgent {
-  border-color: red;
-  background-color: red;
+  border-bottom: 1px solid red;
+  padding: 0 6px;
 }
 #taskbar button {
   margin-right: 3px;
+}
+#taskbar button.active {
+  border-bottom: 1px solid white;
+  padding: 0 10px;
 }
