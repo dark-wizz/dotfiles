@@ -1,0 +1,11 @@
+[Default Applications]
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/about=zen.desktop
+x-scheme-handler/unknown=zen.desktop
+application/pdf=org.gnome.Evince.desktop
+
+[Added Associations]
+application/pdf=org.gnome.Evince.desktop;
+application/octet-stream=dev.zed.Zed.desktop;

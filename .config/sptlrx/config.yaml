@@ -1,0 +1,49 @@
+cookie: "sp_dc=AQAIcfSa_5eMNXCDJdy6Jdv6bwP6Bb3Nxe2oslvb98ErOfZKkX0y9i-mBugi37hC7j6TR42nl1yvwTGu0JpSy81F3vjBw_x01PWcHEOOqKnDU7mER3eDD73LbSSJn4pZpaZrPSdJfOtEay6GYN6qGUnlyc7dQlfdsR2i__t_CXvaL5q2b9NXfuNnWEGwnCbOsLlK_Tn4On9l-OXVo1A; sp_key=28d8895e-fa40-429b-b27b-1960d30d93ef; sp_t=90b87079e0fc993c2f1d1aa45a64b2ec; OptanonConsent=isGpcEnabled=0&datestamp=Thu+Jan+23+2025+12%3A13%3A47+GMT%2B0530+(India+Standard+Time)&version=202411.2.0&browserGpcFlag=1&isIABGlobal=false&hosts=&landingPath=NotLandingPage&groups=s00%3A1%2Cf00%3A1%2Cm00%3A1%2Ct00%3A1%2Ci00%3A1%2Cf11%3A1%2Cm03%3A1&geolocation=IN%3BTN&AwaitingReconsent=false; OptanonAlertBoxClosed=2025-01-23T06:43:04.338Z; sp_landing=https%3A%2F%2Fopen.spotify.com%2F%3Fsp_cid%3D90b87079e0fc993c2f1d1aa45a64b2ec%26device%3Ddesktop"
+player: spotify
+host: lyricsapi.vercel.app
+ignoreErrors: true
+timerInterval: 10
+updateInterval: 10
+style:
+  hAlignment: center
+  before:
+    background: ""
+    foreground: ""
+    bold: false
+    italic: true
+    underline: false
+    strikethrough: false
+    blink: false
+    faint: true
+  current:
+    background: "#000000"
+    foreground: ""
+    bold: true
+    italic: false
+    underline: true
+    strikethrough: false
+    blink: false
+    faint: false
+  after:
+    background: ""
+    foreground: ""
+    bold: false
+    italic: false
+    underline: false
+    strikethrough: false
+    blink: false
+    faint: false
+pipe:
+  length: 0
+  overflow: word
+mpd:
+  address: 127.0.0.1:6600
+  password: ""
+mopidy:
+  address: 127.0.0.1:6680
+mpris:
+  players: []
+browser:
+  port: 8974
+local:
+  folder: ""

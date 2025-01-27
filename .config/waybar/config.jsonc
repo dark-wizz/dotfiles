@@ -192,6 +192,7 @@
     "waves": true,
     "noise_reduction": 0.77,
     "hide_on_silence": true,
+    "sleep_timer": 5,
     "input_delay": 0,
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
     "actions": {

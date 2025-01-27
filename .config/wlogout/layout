@@ -3,40 +3,40 @@
     "action" : "hyprlock",
     "text" : "Lock (l)",
     "keybind" : "l",
-    "height": 1,
+    "height": 1
 }
 {
     "label" : "logout",
     "action" : "loginctl terminate-user $USER",
     "text" : "Logout (e)",
-    "keybind" : "e"
-    "height": 1,
+    "keybind" : "e",
+    "height": 1
 }
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
     "text" : "Shutdown (s)",
-    "keybind" : "s"
-    "height": 1,
+    "keybind" : "s",
+    "height": 1
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "hyprlock & systemctl suspend",
     "text" : "Suspend (u)",
-    "keybind" : "u"
-    "height": 1,
+    "keybind" : "u",
+    "height": 1
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reboot (r)",
-    "keybind" : "r"
-    "height": 1,
+    "keybind" : "r",
+    "height": 1
 }
 {
     "label" : "cancel",
     "action" : "",
     "text" : "cancel (esc)",
-    "keybind" : ""
-    "height": 1,
+    "keybind" : "",
+    "height": 1
 }
