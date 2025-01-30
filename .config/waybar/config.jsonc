@@ -16,12 +16,20 @@
   "modules-center": ["clock", "custom/notification"],
   "modules-right": [
     // "cava",
+    "idle_inhibitor",
     "group/stats",
     "tray",
     "pulseaudio",
     "privacy",
     "battery",
   ],
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": "",
+    },
+  },
   "privacy": {
     "icon-spacing": 4,
     "icon-size": 12,
