@@ -1,0 +1,8 @@
+allow_images=true
+image_size=20
+key_expand=Tab
+key_up=Ctrl-k
+key_down=Ctrl-j
+key_left=Ctrl-h
+key_right=Ctrl-l
+key_exit=Escape
