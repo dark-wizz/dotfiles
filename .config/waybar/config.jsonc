@@ -140,6 +140,7 @@
       "warning": 30,
       "critical": 25,
     },
+    "on-click": "swaync-client -t -sw",
     "format-full": "<span color='#0EFF00' font-size='12pt'>󱟢</span>{capacity}%",
     "format-charging": "<span color='#8ec07c' font-size='12pt'>󰂅</span>{capacity}%",
     "format-plugged": "<span color='#8ec07c' font-size='12pt'>󰂅</span>{capacity}%",

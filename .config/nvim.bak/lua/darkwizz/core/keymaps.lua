@@ -37,7 +37,7 @@ keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) 
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
 -- write
-keymap.set("n", "<leader>c", "<cmd>w<CR>", { desc = "Write" })
+keymap.set("n", "<leader>ww", "<cmd>w<CR>", { desc = "Write" })
 
 -- move lines
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv")

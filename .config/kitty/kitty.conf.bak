@@ -1,6 +1,7 @@
 include color.ini
 
 linux_display_server x11
+
 font_family JetBrainsMono Nerd Font
 font_size 12
 
@@ -36,7 +37,4 @@ inactive_tab_background   #000
 inactive_tab_foreground    #20C20E
 active_tab_background      #000
 active_tab_foreground       #E7C547
-
-
-
 
