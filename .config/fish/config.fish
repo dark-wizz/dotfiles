@@ -10,5 +10,6 @@ alias cd z
 alias S "sudo pacman -S"
 alias R "sudo pacman -S"
 alias ls eza
+alias hey, "ddgpt -cs darkwizz"
 
 zoxide init fish | source
