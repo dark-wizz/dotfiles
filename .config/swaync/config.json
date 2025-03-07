@@ -50,7 +50,6 @@
   "widgets": [
     "inhibitors",
     "menubar#power",
-    "buttons-grid",
     "volume",
     "backlight",
     "dnd",
