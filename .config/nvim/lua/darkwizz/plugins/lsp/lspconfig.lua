@@ -23,6 +23,14 @@ return {
     lspconfig.java_language_server.setup({
         cmd = {"java"}
     })
+
+    lspconfig.ts_ls.setup({
+    on_attach = function(client, bufnr)
+        -- Disable formatting (optional, if you use prettier or eslint for formatting)
+        client.server_capabilities.documentFormattingProvider = false
+    end,
+    filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" }
+})
     
     vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("UserLspConfig", {}),
