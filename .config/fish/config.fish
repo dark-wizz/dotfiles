@@ -12,5 +12,6 @@ alias R "sudo pacman -S"
 alias ls eza
 alias hey, "ddgpt -cs darkwizz"
 alias hey "$HOME/.config/scripts/ddgpt_frmt.sh"
+alias p "paru --bottomup"
 
 zoxide init fish | source

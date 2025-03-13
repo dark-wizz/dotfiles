@@ -46,3 +46,4 @@
 - gtk = Whitesur-dark
 - icons = Whitesur-dark
 - font = JetBrain nerd font regular
+- wallpaper = JaKooLit/wallpaper-Bank
