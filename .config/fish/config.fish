@@ -5,6 +5,8 @@ end
 set -x HYPRSHOT_DIR "$HOME/Pictures/screenshots"
 set -x EDITOR nvim
 set -x GTK_THEME Adwaita:dark
+set -x PNPM_HOME "/home/akram/.local/share/pnpm"
+set -x PATH "$PNPM_HOME:$PATH"
 
 alias cd z
 alias S "sudo pacman -S"
