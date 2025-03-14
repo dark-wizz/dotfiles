@@ -27,7 +27,7 @@ require("lazy").setup({
     -- import your plugins
     { import = "darkwizz.plugins" },
     { import = "darkwizz.plugins.snacks" },
-    -- { import = "darkwizz.plugins.lsp" },
+    { import = "darkwizz.plugins.lsp" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
