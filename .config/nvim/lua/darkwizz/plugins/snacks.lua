@@ -14,7 +14,17 @@ return {
         enabled = true,
         timeout = 3000,
       },
-      picker = { enabled = true },
+    picker = { enabled = true ,
+      sources = {
+        explorer = {
+          layout = {
+            layout = {
+              width = 20,  -- set your desired width here
+            },
+          },
+        },
+      },
+    },
       quickfile = { enabled = true },
       scope = { enabled = true },
       scroll = { enabled = true },
